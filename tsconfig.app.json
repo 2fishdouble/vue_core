@@ -1,0 +1,20 @@
+// tsconfig.app.json
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist",
+    "strict": false,
+    "noImplicitAny": false, // ✅ 允许隐式 any，不报错
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/components/**/*.ts"],
+  "exclude": ["node_modules", "src/test"]
+}

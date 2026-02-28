@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    // 去掉 allowImportingTsExtensions
+    // "allowImportingTsExtensions": true,
+
+    "isolatedModules": true,
+    "moduleDetection": "force",
+
+    "strict": false,
+    "noImplicitAny": false, // ✅ 允许隐式 any，不报错
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist",
+    "skipLibCheck": true
+  },
+  "include": ["vite.config.ts"]
+}

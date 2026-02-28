@@ -1,0 +1,19 @@
+// tsconfig.types.json
+// tsc --build tsconfig.types.json
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "outDir": "dist/types",
+    "rootDir": "src",
+    "strict": false,
+    "noImplicitAny": false, // ✅ 允许隐式 any，不报错
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/components/**/*.ts",
+    "src/store/**/*.ts",
+  ]
+}
